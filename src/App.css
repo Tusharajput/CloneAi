@@ -6,12 +6,13 @@
 }
 
 html{
-  font-size: 62.5%;/
+  font-size: 62.5%;
 
 }
 
-body{
-  /* background:rgb(3, 0, 31) ; */
+body{  
+  background: #32323a;
+
   color: white;
   font-family: 'Poppins', sans-serif;
 }
@@ -65,17 +66,17 @@ body{
 }
 
 .midBtn{
-  background: #5a4bff;
+  /* background:transparent; */
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: .5rem;
   font-size: 1.5rem;
   width: 25rem;
   display: flex;
-  /* align-content: center; */
+  align-content: center;
   justify-content: center;
-  /* margin-top: 1rem; */
-  /* margin-bottom: 1rem; */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 0.5rem;
 }
 
@@ -89,7 +90,7 @@ body{
   margin: 1rem auto;
   border-radius: 0.5rem;
   cursor:pointer;
-  border: 1px solid rgba(98, 98, 98, 1);
+  /* border: 1px solid rgba(98, 98, 98, 1); */
 }
 
 .query>img{
@@ -138,10 +139,15 @@ body{
   max-width: 85rem ;
   height: calc(100vh- 17rem);
 }
-
+.text{
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: white;
+  font-weight: 500;
+}
 .chat{
   border-radius: 0.5rem;
-  background: rgba(28, 30, 58, 1);
+  background: transparent;
   margin: 1rem;
   padding: 2rem 3rem;
   font-size: 1.2rem;
@@ -150,11 +156,17 @@ body{
   text-align: justify;
 
 }
+.border{
+  /* border: 1px solid  white; */
+  border-radius: 1rem;
+}
 
 .bot{
-  background: rgba(28, 30, 58, 1);
+  background:transparent;
   width: fit-content ;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
+  /* border: 1px solid white; */
+ 
 }
 .chatImg{
   object-fit: cover ;
@@ -173,17 +185,18 @@ body{
 
 .inp{
   padding: 0.5rem;
-  background: rgba(28, 30, 58, 1);
+  border: 1px solid rgb(93, 87, 87);
+  background: transparent;
   display: flex;
   align-items: center;
-  border-radius: 0.5rem;
-  width: 85rem;
+  border-radius: 1.5rem;
+  width: 80rem;
   
   
 }
 .inp>input{
   
-  width: 85rem;
+  width: 80rem;
   outline: none;
   padding: 1.25rem;
   color: white;
@@ -194,5 +207,5 @@ body{
 }
 
 .chatFooter>p{
-  margin: 2rem 0;
+  margin: 1rem 0;
 }

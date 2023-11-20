@@ -130,8 +130,8 @@ function App() {
       
       <div className="main">
        
-        <div className="chats">
-          <div className="chat">
+        <div className="chats ">
+          <div className="chat border">
             <img className="chatImg" src={userIcon} alt="" />
             <p className="text">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
@@ -139,14 +139,20 @@ function App() {
               voluptates mollitia. Autem.
             </p>
           </div>
-          <div className="chat bot">
+          <div className="chat bot ">
             <img className="chatImg" src={gptImgLogo} alt="" />
             <p className="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
               consectetur eius accusantium possimus hic provident? Praesentium
               distinctio incidunt nulla. Temporibus dicta, beatae ratione,
               delectus illum nostrum laboriosam voluptas nemo suscipit
+              voluptatibus quos consequuntur nisi simlor sit amet consectetur adipisicing elit. Modi
+              consectetur eius accusantium possimus hic provident? Praesentium
+              distinctio incidunt nulla. Temporibus dicta, beatae ratione,
+              delectus illum nostrum laboriosam voluptas nemo suscipit
               voluptatibus quos consequuntur nisi similique dignissimos ut eum
+              nesciunt fuga obcaecati mollitia velit magnam quis aliquid sed
+              doloribus. Quas id aperiam omnis ut, fugilique dignissimos ut eum
               nesciunt fuga obcaecati mollitia velit magnam quis aliquid sed
               doloribus. Quas id aperiam omnis ut, fugit voluptatibus eos nobis
               debitis reiciendis a eligendi pariatur dolor laudantium, veniam
