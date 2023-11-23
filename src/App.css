@@ -1,75 +1,85 @@
-*{
+* {
+  /* font-family: monospace; */
   margin: 0;
   padding: 0;
+
   box-sizing: border-box;
-
 }
 
-html{
+html {
   font-size: 62.5%;
-
 }
 
-body{  
-  background: #32323a;
+.fixed .sideBar {
+  width: 620pxpx;
+  height: 100vh;
+  position: fixed;
+}
+.scroll {
+  overflow-y: scroll;
+  height: 100vh;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
 
+body {
+  background-color: black;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.App{
-  min-height: 100vh;
+.App {
   display: flex;
 }
 
 .sideBar {
-  background:#050509 ;
- 
+  background: #050509;
   border-right: 1px solid rgb(100, 100, 100);
 }
 
-
-.main{
+.main {
   flex: 9;
-  
 }
 
-.logo{
-  margin-right: 1rem;
+.logo {
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
-.brand{
+.brand {
   font-size: 2rem;
+  margin: auto 0;
 }
 
-.upperSide{
+.upperSide {
   padding: 0rem;
   border-bottom: 1px solid rgb(100, 100, 100);
-  height: 70%;
-
+  height: 87%;
 }
-.upperSideTop{
+.upperSideTop {
   display: flex;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-left: 6rem;
+  margin-top: 1.5rem;
 }
 
-.addBtn{
+.addBtn {
   height: 2rem;
   padding-right: 1rem;
 }
 
-.nchat{
+.nchat {
   margin-top: 0.2rem;
-  
-  
+  margin-left: 0.5rem;
 }
-
-.midBtn{
-  /* background:transparent; */
-  border: none;
-  color: rgb(0, 0, 0);
-  padding: .5rem;
+.midBtn {
+  background-color: transparent;
+  border: 1px solid rgb(0, 238, 255);
+  color: rgb(0, 238, 255);
+  padding: 0.5rem;
   font-size: 1.5rem;
   width: 25rem;
   display: flex;
@@ -78,134 +88,142 @@ body{
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 
-.query{
+.query {
   display: flex;
+  border: 1px solid rgb(0, 238, 255);
   align-items: center;
   background: transparent;
-  color: rgba(222, 222, 222, 1);
+  color: rgb(0, 238, 255);
+  font-size: 1.75rem;
   padding: 1.5rem;
   width: 25rem;
   margin: 1rem auto;
   border-radius: 0.5rem;
-  cursor:pointer;
-  /* border: 1px solid rgba(98, 98, 98, 1); */
+  cursor: pointer;
 }
-
-.query>img{
-  margin-right: 2rem;
+.margin {
+  margin: 3rem 1rem;
+}
+.query > img {
+  margin-right: 1.5rem;
   object-fit: cover;
   height: 1.75rem;
 }
 
-.lowerSide{
+.lowerSide {
   padding: 2rem;
   display: flex;
 }
 
-.listItems{
-  margin: 0.75rem ;
-  display: flex;flex-direction: column;
+.listItems {
+  margin: 0.75rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   align-content: center;
   font-size: 1rem;
-
 }
 
-.listitemsImg{
+.listitemsImg {
   margin: 1rem;
- 
- 
+
   cursor: pointer;
   padding-right: 1rem;
 }
 
-
-.main{
+.main {
   min-height: calc(100vh-14rem);
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: 6rem 10rem ;
+  margin: 6rem 10rem;
   margin-bottom: 1rem;
 }
 
-.chats{
-  overflow:hidden;
-  overflow-y: scroll;
+.chats {
+  margin-bottom: 7rem;
+  overflow: auto;
+  overflow-y: auto;
   scroll-behavior: smooth;
-  width: 100%;
-  max-width: 85rem ;
+
+  max-width: 90rem;
   height: calc(100vh- 17rem);
 }
-.text{
-  font-size: 1.5rem;
-  margin: 1rem 0;
-  color: white;
+.text {
+  font-size: 2rem;
+
+  color: rgb(0, 238, 255);
   font-weight: 500;
 }
-.chat{
+.chat {
   border-radius: 0.5rem;
   background: transparent;
   margin: 1rem;
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   font-size: 1.2rem;
   display: flex;
   align-items: flex-start;
   text-align: justify;
-
 }
-.border{
-  /* border: 1px solid  white; */
+.border {
   border-radius: 1rem;
 }
-
-.bot{
-  background:transparent;
-  width: fit-content ;
-  border-radius: 1rem;
-  /* border: 1px solid white; */
- 
+.text1 {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
 }
-.chatImg{
-  object-fit: cover ;
+.bot {
+  background: transparent;
+  width: fit-content;
+  border-radius: 1rem;
+}
+.chatImg {
+  object-fit: cover;
   width: 3.5rem;
   margin-right: 2rem;
   border-radius: 0.5rem;
 }
-.chatFooter{
-  margin-top: auto;
+
+.chatFooter {
+  position: fixed;
+  bottom: 3rem;
   width: 100%;
+
+  margin-top: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
-.inp{
-  padding: 0.5rem;
-  border: 1px solid rgb(93, 87, 87);
-  background: transparent;
+.inp {
+  width: 80rem;
   display: flex;
   align-items: center;
-  border-radius: 1.5rem;
-  width: 80rem;
-  
-  
+  justify-content: center;
+  margin-left: 6rem;
 }
-.inp>input{
-  
-  width: 80rem;
+.inp > input {
+  border: 1px solid rgb(0, 238, 255);
+  width: 75rem;
   outline: none;
-  padding: 1.25rem;
-  color: white;
-}
-.inp>input, .send{
-  background: transparent;
-  border: none  ;
-}
 
-.chatFooter>p{
-  margin: 1rem 0;
+  padding: 1.25rem;
+}
+.inp > input,
+.send {
+  background: rgb(35, 35, 35);
+  border-radius: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+.send {
+  margin-left: 3px;
+  padding: 0.8rem;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  border: 1px solid rgb(0, 238, 255);
 }
